@@ -32,7 +32,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Deploy Docker image2
       with:
-        image: deploy_gitactions
+        image: helena01/deploy_gitactions
         tags: 1.0
         registry: docker.io
         dockerfile: dockerfile
