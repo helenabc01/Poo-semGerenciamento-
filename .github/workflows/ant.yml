@@ -25,12 +25,12 @@ jobs:
       run: |
         cd src
         javac -cp . Main.java
-    - name: Rodando o Programa
+    - name: Rodando o Programa2
       run: |
         cd src
         java -cp . Main
     - uses: mr-smithers-excellent/docker-build-push@v6
-      name: Build & push Docker image
+      name: Deploy Docker image
       with:
         image: deploy_gitactions
         tags: 1.0
